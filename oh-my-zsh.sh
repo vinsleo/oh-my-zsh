@@ -88,6 +88,7 @@ done
 
 # Load all of your custom configurations from custom/
 for config_file ($ZSH_CUSTOM/*.zsh(N)); do
+  echo $config_file "DONE"
   source $config_file
 done
 unset config_file
